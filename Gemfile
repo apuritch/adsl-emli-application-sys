@@ -88,7 +88,8 @@ gem "aasm", "~> 5.5.0"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[mri windows]
+  gem "debug"
+# aap - workaround for Openshift , platforms: %i[mri windows]
   gem "pry-byebug", "~> 3.10.1"
   gem "rspec-rails", "~> 6.1.0"
   gem "rswag-specs", "~> 2.13"
